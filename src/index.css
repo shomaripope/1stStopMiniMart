@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: darkred;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+img {
+  margin: 20px 50px 10px 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.nav {
+  color: white;
+  margin: auto;
+  height: 250px;
+  background: url(../src/images/444image2.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.card {
+  height: 250px;
+  margin-bottom: 80px;
+}
+
+#storethumbcard {
+  height: 250px;
+  margin-bottom: 80px;
+  background: url(../src/images/1stStopStorePic1.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  text-align: left;
+  color: white;
+}
+
+#cafethumbcard {
+  height: 250px;
+  margin-bottom: 80px;
+  background: url(../src/images/CafeMenuPic.png) no-repeat;
+  background-size: 100%;
+  background-position: top;
+  text-align: left;
+  color: white;
+}
+
+#loungethumbcard {
+  height: 250px;
+  margin-bottom: 80px;
+  background: url(../src/images/LoungeServicesPic1.png) no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  text-align: left;
+  color: white;
+}
+
+#eventsthumbcard {
+  height: 250px;
+  margin-bottom: 80px;
+  background: url(../src/images/IMG9505661.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  text-align: left;
+  color: white;
+}
+
+#header {
+  color: white;
+  text-align: center;
+  height: 100px;
+}
+
+#footer {
+  color: white;
+  margin: auto;
+  height: 250px;
+  text-justify: auto;
+}
+
+#menu {
+  
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  
+}
