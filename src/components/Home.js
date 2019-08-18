@@ -7,7 +7,7 @@ class Home extends Component {
         return (
             <div>
                 <div id="header">
-                <h1>Welcome To 1st Stop Mini-Mart</h1>
+                
                 </div>
                 <div className="container">
                     <Link to='/store'> 

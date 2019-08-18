@@ -11,6 +11,7 @@ const NavBar = () => {
                 <li><Link to='/signup'> Sign Up</Link></li>
                 <li><Link to='/'> Home</Link></li>
                 </ul>
+                <h4 cl="center">Welcome To 1st Stop Mini-Mart</h4>
             </div>
         </nav>
     )

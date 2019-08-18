@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import SignUpForm from './components/SignUpForm';
 import Home from './components/Home';
-import EventList from './components/EventList';
+import Events from './components/Events';
 import NavBar from './components/NavBar';
 import Store from './components/Store';
 import StoreItem from './components/StoreItem';
@@ -20,7 +20,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/event/:id' component={EventDetails} />
-            <Route path='/events' component={EventList} />
+            <Route path='/events' component={Events} />
             <Route path='/store' component={Store} />
             <Route path='/storeitem/:id' component={StoreItem} />
             <Route path='/signup' component={SignUpForm} />
