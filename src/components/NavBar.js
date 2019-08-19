@@ -8,6 +8,7 @@ const NavBar = () => {
             <div>
                 <img src={Logo} alt="logo" /> <Link to='/'></Link>
                 <ul>
+                <li><Link to='/admin'> Admin Login</Link></li>
                 <li><Link to='/signup'> Sign Up</Link></li>
                 <li><Link to='/'> Home</Link></li>
                 </ul>

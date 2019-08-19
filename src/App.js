@@ -10,6 +10,8 @@ import EventDetails from './components/EventDetails';
 import LoungeList from './components/LoungeList';
 import CafeMenu from './components/CafeMenu';
 import Footer from './components/Footer';
+import CreateEvent from './components/CreateEvent';
+import EventRequest from './components/EventRequest';
 
 class App extends Component {
   render() {
@@ -19,13 +21,15 @@ class App extends Component {
         <NavBar/>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/event/:id' component={EventDetails} />
-            <Route path='/events' component={Events} />
             <Route path='/store' component={Store} />
             <Route path='/storeitem/:id' component={StoreItem} />
-            <Route path='/signup' component={SignUpForm} />
+            <Route path='/cafe' component={CafeMenu} /> 
             <Route path='/lounge' component={LoungeList} />
-            <Route path='/cafe' component={CafeMenu} />
+            <Route path='/events' component={Events} />
+            <Route path='/event/:id' component={EventDetails} />     
+            <Route path='/createevent' component={CreateEvent} />
+            <Route path='/requestevent' component={EventRequest} />
+            <Route path='/signup' component={SignUpForm} /> 
           </Switch>
           <Footer />
         </div>
