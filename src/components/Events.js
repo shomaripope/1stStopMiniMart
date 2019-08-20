@@ -9,6 +9,7 @@ class Events extends Component {
     render() {
         console.log(this.props)
         const { events } = this.props;
+
         return (
                 <div>
                 <EventList events={events} />
@@ -16,7 +17,6 @@ class Events extends Component {
                 <Link to='/createevent' className="brand-logo"> Create An Event </Link>
                 </div>
         );
-        
     }
 }
 

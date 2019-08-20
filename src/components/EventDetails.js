@@ -3,27 +3,28 @@ import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 
-const EventDetails = (props) => {
-    const id = props.match.params.id;
+class EventDetails extends Component {
+    render() {
+        console.log(this.props)
+        const { event } = this.props;
+
         return (
-            <div className="card">
+                <div className="card">
                 <div className="card-content grey-text text-darken-">
-                    <span className="card-title">{id}</span>
-                    <p>Event Details: {}</p>
-                    <p>Hosted By: {}</p>
+                    <span className="card-title">Event Title: {event}</span>
+                    <p>Event Details: gjygjgj}</p>
+                    <p>Hosted By: dslslsn</p>
                     <p>Date:  </p>
                 </div>
             </div>
         );
+    }
 }
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
     console.log(state);
-    const id = ownProps.match.params.id;
-    const events = state.firestore.data.events;
-    const event = events ? events[id] : null
     return {
-        event: event
+        events: state.firestore.ordered.events
     }
 }
 
