@@ -11,7 +11,7 @@ class EventDetails extends Component {
         return (
                 <div className="card">
                 <div className="card-content grey-text text-darken-">
-                    <span className="card-title">Event Title: {event}</span>
+                    <span className="card-title">Event Title: </span>
                     <p>Event Details: gjygjgj}</p>
                     <p>Hosted By: dslslsn</p>
                     <p>Date:  </p>

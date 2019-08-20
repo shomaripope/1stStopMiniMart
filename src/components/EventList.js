@@ -9,7 +9,7 @@ const EventList = ({events}) => {
                 return (
                     <div key={event.id}>
                     <Link to={'/event/' + event.id} >
-                    <EventDetails event={this.props.event} key={event.id} />
+                    <EventDetails event={event} key={event.id} />
                     </Link>
                     </div>
                 )
