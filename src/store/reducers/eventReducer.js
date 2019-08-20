@@ -1,9 +1,9 @@
 
 const initState = {
     events: [
-        // {id: '1', title: 'lyfe cannabis apparel debut', author: 'Ari Pope', content: 'blah blah blah blah', date: 9/18/2019},
-        // {id: '2', title: 'lyfe cannabis apparel showcase', author: 'Ari Pope', content: 'blah blah blah blah', date: 9/18/2019},
-        // {id: '3', title: 'lyfe cannabis apparel sales', author: 'Ari Pope', content: 'blah blah blah blah', date: 9/18/2019}
+        // {id: '', title: '', author: '', content: '', date: 9/18/2019},
+        // {id: '2', title: '', author: '', content: '', date: 9/18/2019},
+        // {id: '3', title: '', author: '', content: '', date: 9/18/2019}
     ]
 }
 

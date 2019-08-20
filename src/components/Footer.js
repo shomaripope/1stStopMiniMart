@@ -9,10 +9,10 @@ const Footer = () => {
                 <Link to='/' className="brand-logo">
                     <img src={Logo} alt="logo" /> 
                 </Link>
-                    <div className="center">
-                        <h1> 1st Stop Mini-Mart </h1>
-                        <h3>Located at 444 Hightland Ave NE, Atlanta Ga 30312</h3>
-                        <h3>Mini Mart/Cafe/Lounge/Event Center</h3>
+                    <div className="footer center">
+                        <h4> 1st Stop Mini-Mart </h4>
+                        <h4>Located at 444 Hightland Ave NE, Atlanta Ga 30312</h4>
+                        <h4>Mini Mart/Cafe/Lounge/Event Center</h4>
                     </div>
             </div>
         </nav>

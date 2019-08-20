@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { signIn } from '../store/actions/authActions';
 
-class SignUpForm extends Component {
+
+class SignInForm extends Component {
     state = {
-        firstName: '',
-        lastName: '',
         email: '',
         password: ''
 
@@ -15,21 +16,14 @@ class SignUpForm extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state);
+        this.props.signIn(this.state);
     }
     render() {
+        const { authError} = this.props;
         return (
             <div className="container">
                 <form onSubmit={this.handleSubmit} className="white">
-                    <div><h5 className="grey-text text-darken-3 center">Sign Up to get notifications about exclusve products, services, and events!</h5></div>
-                    <div className="input-field">
-                            <label htmlFor="firstName">First Name</label>
-                            <input type="text" id="firstName" onChange={this.handleChange} />
-                        </div>
-                        <div className="input-field">
-                            <label htmlFor="lastName">Last Name</label>
-                            <input type="text" id="lastName" onChange={this.handleChange} />
-                        </div>
+                    <h5 className="grey-text text-darken-3">Admin Sign In</h5>
                         <div className="input-field">
                             <label htmlFor="email">Email</label>
                             <input type="email" id="email" onChange={this.handleChange} />
@@ -39,7 +33,10 @@ class SignUpForm extends Component {
                             <input type="password" id="password" onChange={this.handleChange} />
                         </div>
                         <div className="input-field">
-                            <button className="btn blue lighten-1 z-depth-0">Sign Up</button>
+                            <button className="btn blue lighten-1 z-depth-0">Sign In</button>
+                            <div className="pink pink lighten-1 center">
+                            { authError ? <p>{authError}</p> : null}
+                            </div>
                         </div>
                 </form>
                 
@@ -48,4 +45,16 @@ class SignUpForm extends Component {
     }
 }
 
-export default SignUpForm;
+const mapStateToProps = (state) => {
+    return {
+        authError: state.auth.authError
+    }
+}
+
+const mapDispatchToProps = (dispatch) =>{
+    return {
+        signIn: (creds) => dispatch(signIn(creds))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SignInForm);

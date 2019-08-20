@@ -1,21 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../images/1stStopLogo.png'
+import Logo from '../images/1stStopLogo.png';
+import { connect } from 'react-redux';
+import SignedInLinks from './SignedInLinks';
+import SignedOutLinks from './SignedOutLinks';
 
-const NavBar = () => {
+const NavBar = (props) => {
+    const { auth } = props;
+    const links = auth.uid ? <SignedInLinks /> : <SignedOutLinks />
     return (
         <nav className="nav red darken-3">
-            <div>
-                <img src={Logo} alt="logo" /> <Link to='/'></Link>
-                <ul>
-                <li><Link to='/admin'> Admin Login</Link></li>
-                <li><Link to='/signup'> Sign Up</Link></li>
-                <li><Link to='/'> Home</Link></li>
-                </ul>
-                <h4 cl="center">Welcome To 1st Stop Mini-Mart</h4>
+                <Link to='/'> <li><img src={Logo} alt="logo" /></li> </Link>
+                <div>
+                 { links }
+                
             </div>
         </nav>
     )
 }
 
-export default NavBar;
+const mapStateToProps = (state) => {
+    return {
+        auth: state.firebase.auth
+    }
+}
+
+export default connect(mapStateToProps)(NavBar);

@@ -4,6 +4,7 @@ import SignUpForm from './components/SignUpForm';
 import Home from './components/Home';
 import Events from './components/Events';
 import NavBar from './components/NavBar';
+import Admin from './components/Admin';
 import Store from './components/Store';
 import StoreItem from './components/StoreItem';
 import EventDetails from './components/EventDetails';
@@ -12,6 +13,7 @@ import CafeMenu from './components/CafeMenu';
 import Footer from './components/Footer';
 import CreateEvent from './components/CreateEvent';
 import EventRequest from './components/EventRequest';
+import SignInForm from './components/SignInForm';
 
 class App extends Component {
   render() {
@@ -21,6 +23,7 @@ class App extends Component {
         <NavBar/>
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route exact path='/admin' component={Admin} />
             <Route path='/store' component={Store} />
             <Route path='/storeitem/:id' component={StoreItem} />
             <Route path='/cafe' component={CafeMenu} /> 
@@ -30,6 +33,7 @@ class App extends Component {
             <Route path='/createevent' component={CreateEvent} />
             <Route path='/requestevent' component={EventRequest} />
             <Route path='/signup' component={SignUpForm} /> 
+            <Route path='/signin' component={SignInForm} />
           </Switch>
           <Footer />
         </div>

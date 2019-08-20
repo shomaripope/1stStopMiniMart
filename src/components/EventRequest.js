@@ -38,7 +38,7 @@ class EventRequest extends Component {
                             <input type="text" id="date" onChange={this.handleChange} />
                         </div>
                         <div className="input-field">
-                            <button className="btn pink lighten-1 z-depth-0">Submit Event Request</button>
+                            <button className="btn blue lighten-1 z-depth-0">Submit Event Request</button>
                         </div>
                 </form>
                 

@@ -41,7 +41,7 @@ class CreateEvent extends Component {
                             <input type="text" id="date" onChange={this.handleChange} />
                         </div>
                         <div className="input-field">
-                            <button className="btn pink lighten-1 z-depth-0">Create Event</button>
+                            <button className="btn blue lighten-1 z-depth-0">Create Event</button>
                         </div>
                 </form>
                 
