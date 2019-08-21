@@ -4,7 +4,8 @@ export const createEvent = (event) => {
         const firestore = getFirestore();
         firestore.collection('events').add({
             ...event,
-            author: 'shomari pope',
+            authorFirstName: '',
+            authorLastName: '',
             authorId: 12345,
             createdAt: new Date()
         }).then(() => {
