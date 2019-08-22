@@ -6,11 +6,12 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div id="header">
-                <h1 className="center">Welcome To 1st Stop Mini-Mart</h1>
+                <div className="container" id="header">
+                <h1>Welcome To 1st Stop Mini-Mart</h1>
                 <h4>Mini Mart/Cafe/Lounge/Event Center</h4>
                 <h4>Located at 444 Hightland Ave NE, Atlanta Ga 30312</h4>
                 </div>
+                <div>
                 <div className="container">
                     <Link to='/store'> 
                     <div className="card" id="storethumbcard">
@@ -35,6 +36,7 @@ class Home extends Component {
                     <h1>Events</h1>
                     </div>
                     </Link>
+                    </div>
                 </div>
             </div>
         );

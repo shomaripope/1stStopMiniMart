@@ -10,7 +10,7 @@ class Events extends Component {
         const { events } = this.props;
 
         return (
-                <div>
+                <div className="container">
                     
                 <EventList events={events} />
                 

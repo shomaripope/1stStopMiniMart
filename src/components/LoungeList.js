@@ -4,7 +4,7 @@ import LoungeItem from './LoungeItem';
 class LoungeList extends Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <LoungeItem />
             </div>
         );

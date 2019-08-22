@@ -22,7 +22,7 @@ img {
 
 .nav {
   color: white;
-  margin-bottom: 100px;
+  margin-bottom: auto;
   height: 250px;
   background: url(../src/images/444image2.jpg) no-repeat;
   background-size: 100%;
@@ -31,6 +31,7 @@ img {
 .card {
   height: 250px;
   margin-bottom: 80px;
+  margin-top:200px;
 }
 
 #storethumbcard {
@@ -73,11 +74,41 @@ img {
   color: white;
 }
 
+#storepic {
+  height: 500px;
+  margin-bottom: 80px;
+  background: url(../src/images/1stStopStorePic4.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  text-align: left;
+  color: white;
+}
+
+#storepic2 {
+  height: 500px;
+  margin-bottom: 80px;
+  background: url(../src/images/1stStopStorePic3.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  text-align: left;
+  color: white;
+}
+
+#loungepic {
+  height: 80em;
+  margin-bottom: auto;
+  background: url(../src/images/LoungeServicesPic.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  text-align: left;
+  color: white;
+}
+
 #header {
   color: white;
   text-align: center;
   height: 100px;
-  margin-bottom: auto;
+  margin: auto; 
 }
 
 #footer {
@@ -88,8 +119,13 @@ img {
 }
 
 #menu {
-  margin: 100px;
+  margin-top: 50px;
   height: 90%;
   width: 90%;
-  
+}
+
+#menu2 {
+  margin: 50px;
+  height: 90%;
+  width: 90%;
 }

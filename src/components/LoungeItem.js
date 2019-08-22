@@ -4,7 +4,9 @@ class LoungeItem extends Component {
     render() {
         return (
             <div>
-                <h1>Lounge Item</h1>
+                <h1>Lounge Services</h1>
+                <div alt="loungepic" id="loungepic">
+                </div>
             </div>
         );
     }
