@@ -1,4 +1,6 @@
 body {
+  display: grid;
+  width: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -6,6 +8,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: darkred;
+  color: white;
+  text-align: center;
   
 }
 
@@ -14,24 +18,22 @@ code {
     monospace;
 }
 
-img {
-  margin: 20px 50px 10px 10px;
-  height: 200px;
-  width: 200px;
+#logo {
+  
+  height: 30%;
+  width: 30%;
 }
 
 .nav {
-  color: white;
-  margin-bottom: auto;
-  height: 250px;
-  background: url(../src/images/444image2.jpg) no-repeat;
-  background-size: 100%;
-  background-position: center;
+  display: inline-block;
+  background-color: darkred;
+  margin: auto;
+  height: auto;
 }
 .card {
   height: 250px;
   margin-bottom: 80px;
-  margin-top:200px;
+  margin-top: auto;
 }
 
 #storethumbcard {
@@ -95,37 +97,44 @@ img {
 }
 
 #loungepic {
-  height: 80em;
-  margin-bottom: auto;
+  height: auto;
+  width: auto;
+  margin-bottom: 80px;
   background: url(../src/images/LoungeServicesPic.png) no-repeat;
   background-size: 100%;
   background-position: center;
-  text-align: left;
+  text-align: center;
   color: white;
+
 }
 
-#header {
-  color: white;
+#intro {
+ 
+  height: auto;
   text-align: center;
-  height: 100px;
-  margin: auto; 
+  
 }
 
 #footer {
-  color: white;
-  margin: auto;
-  height: 250px;
-  text-justify: auto;
+  color: darkred;
+  background-color: white;
+  width: auto;
 }
 
 #menu {
-  margin-top: 50px;
+  display: inline-block;
+  margin: auto;
   height: 90%;
   width: 90%;
 }
 
 #menu2 {
-  margin: 50px;
+  display: inline-block;
+  margin: auto;
   height: 90%;
   width: 90%;
+}
+
+.eventContent {
+  margin-top: 40px;
 }

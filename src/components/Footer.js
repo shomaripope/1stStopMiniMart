@@ -1,21 +1,30 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 // import Logo from '../images/1stStopLogo.png'
 
 const Footer = () => {
     return (
-        <nav className="nav red darken-3">
-            <div id="footer">
-                {/* <Link to='/' className="brand-logo">
-                    <img src={Logo} alt="logo" /> 
-                </Link> */}
-                    <div className="footer center">
-                        <h4> 1st Stop Mini-Mart </h4>
-                        <h4>Located at 444 Hightland Ave NE, Atlanta Ga 30312</h4>
-                        <h4>Mini Mart/Cafe/Lounge/Event Center</h4>
-                    </div>
+
+<footer className="page-footer" id="footer">
+          <div className="container">
+            <div className="row">
+              
+                <div>
+                    <p>1st Stop Mini-Mart <br />
+                    444 Hightland Ave NE, Atlanta Ga 30312 <br />
+                    678.515.8928</p>
+                </div>
+             
             </div>
-        </nav>
+          </div>
+          <div className="footer-copyright">
+            <div className="container blue-text">
+            © 2014 Copyright 1st Stop MiniMart  <br/>
+            Powered By: Shomri N'Kosi Pope
+            <div className="right" href="#!"><NavLink to='/signin' >Admin Login </NavLink></div>
+            </div>
+          </div>
+        </footer>
     )
 }
 

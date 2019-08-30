@@ -4,9 +4,6 @@ export const createEvent = (event) => {
         const firestore = getFirestore();
         firestore.collection('events').add({
             ...event,
-            authorFirstName: '',
-            authorLastName: '',
-            authorId: 12345,
             createdAt: new Date()
         }).then(() => {
             dispatch({ type: 'CREATE_EVENT', event });   

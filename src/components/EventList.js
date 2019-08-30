@@ -3,14 +3,16 @@ import EventDetails from './EventDetails';
 import{ Link } from 'react-router-dom';
 
 const EventList = ({events}) => {
+
+
     return (
         <div>
             { events && events.map(event => {
                 return (
                     <div key={event.id}>
-                    <Link to={'/event/' + event.id} >
-                    <EventDetails event={event} key={event.id} />
-                    </Link>
+                    {/* <Link to={'/event/' + event.id} > */}
+                    <EventDetails newevent={event} />
+                    {/* </Link> */}
                     </div>
                 )
             })}
@@ -19,3 +21,5 @@ const EventList = ({events}) => {
 }
 
 export default EventList;
+
+

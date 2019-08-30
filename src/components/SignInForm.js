@@ -17,6 +17,7 @@ class SignInForm extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.signIn(this.state);
+        e.target.reset();
     }
     render() {
         const { authError} = this.props;
@@ -33,7 +34,7 @@ class SignInForm extends Component {
                             <input type="password" id="password" onChange={this.handleChange} />
                         </div>
                         <div className="input-field">
-                            <button className="btn blue lighten-1 z-depth-0">Sign In</button>
+                            <button className="btn waves-effect waves-light blue lighten-1 z-depth-0">Sign In</button>
                             <div className="pink pink lighten-1 center">
                             { authError ? <p>{authError}</p> : null}
                             </div>

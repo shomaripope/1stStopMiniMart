@@ -6,9 +6,11 @@ export const signIn = (credentials) => {
             credentials.email,
             credentials.password
         ).then(() =>{
-            dispatch ({ type: 'LOGIN_SUCCESS'});
-        }).catch((err) => {
-            dispatch({ type: 'LOGIN_ERROR', err});
+            dispatch({ type: 'LOGIN_SUCCESS' })
+        }).then(() => {
+            alert("Login Success!")
+        }).catch(err => {
+            dispatch({ type: 'LOGIN_ERROR', err })
         })
     }
 }
@@ -39,6 +41,10 @@ export const signUp = (newUser) => {
             })
         }).then(() => {
             dispatch({ type: 'SIGNUP_SUCCESS' })
+        }).then(() => {
+            alert("Thank You for signinig up! We'll be in touch...!")
+        }).then(() => {
+            dispatch(signOut())
         }).catch(err => {
             dispatch({ type: 'SIGNUP_ERROR', err })
         })

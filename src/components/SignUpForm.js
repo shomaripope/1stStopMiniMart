@@ -19,6 +19,7 @@ class SignUpForm extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.signUp(this.state);
+        e.target.reset();
     }
     render() {
         const { auth, authError } = this.props;
@@ -40,11 +41,11 @@ class SignUpForm extends Component {
                             <input type="email" id="email" onChange={this.handleChange} />
                         </div>
                         <div className="input-field">
-                            <label htmlFor="password">Password</label>
+                            <label htmlFor="password">Phone Number</label>
                             <input type="password" id="password" onChange={this.handleChange} />
                         </div>
                         <div className="input-field">
-                            <button className="btn blue lighten-1 z-depth-0">Sign Up</button>
+                            <button className="btn waves-effect waves-light blue lighten-1 z-depth-0">Sign Up</button>
                             <div className="pink pink lighten-1 center">
                                 {authError ? <p>{authError}</p> : null}
                             </div>

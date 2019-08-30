@@ -6,11 +6,10 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div className="container" id="header">
-                <h1>Welcome To 1st Stop Mini-Mart</h1>
-                <h4>Mini Mart/Cafe/Lounge/Event Center</h4>
-                <h4>Located at 444 Hightland Ave NE, Atlanta Ga 30312</h4>
-                </div>
+                <div className="container" id="intro"></div>
+                <h3>First Stop Mini Mart is a brand new convenience store and coffee shop, located in the heart of the city. Our locations key feature is a charming coffee shop featuring free-wifi, television, food & drink, special events and more!
+                </h3>
+                <h4>Call us @: 678.515.8928</h4>
                 <div>
                 <div className="container">
                     <Link to='/store'> 
@@ -44,3 +43,4 @@ class Home extends Component {
 }
 
 export default Home;
+

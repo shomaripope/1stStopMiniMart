@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { firestoreConnect } from 'react-redux-firebase';
-import { compose } from 'redux';
+// import { connect } from 'react-redux';
+// import { firestoreConnect } from 'react-redux-firebase';
+// import { compose } from 'redux';
 
 class EventDetails extends Component {
     render() {
         console.log(this.props)
-        const { event } = this.props;
+        const { newevent } = this.props;
 
         return (
             <div className="container">
                 <div className="card">
                     <div className="card-content grey-text text-darken-">
-                        <span className="card-title">Event Title: </span>
-                        <p>Event Details: gjygjgj}</p>
-                        <p>Hosted By: dslslsn</p>
-                        <p>Date: </p>
+                        <span className="card-title">Event Title: {newevent.title} </span>
+                        <p>Event Details: {newevent.content} </p>
+                        <p>Hosted By: {newevent.author} </p>
+                        <p>Date: {newevent.date} </p>
                     </div>
                 </div>
             </div>
@@ -23,16 +23,18 @@ class EventDetails extends Component {
     }
 }
 
-const mapStateToProps = (state) => {
-    console.log(state);
-    return {
-        events: state.firestore.ordered.events
-    }
-}
+export default EventDetails;
 
-export default compose(
-    connect(mapStateToProps),
-    firestoreConnect([
-        { collection: 'events' }
-    ])
-)(EventDetails);
+// const mapStateToProps = (state) => {
+//     console.log(state);
+//     return {
+//         event: state.firestore.ordered.event
+//     }
+// }
+
+// export default compose(
+//     connect(mapStateToProps),
+//     firestoreConnect([
+//         { collection: 'events' }
+//     ])
+// )(EventDetails);
