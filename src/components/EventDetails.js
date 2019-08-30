@@ -13,8 +13,10 @@ class EventDetails extends Component {
                 <div className="card">
                     <div className="card-content grey-text text-darken-">
                         <span className="card-title">Event Title: {newevent.title} </span>
+                        <p>Hosted By: {newevent.name} </p>
+                        <p>Host Contact Email: {newevent.email} </p>
+                        <p>Host Contact Number: {newevent.number} </p>
                         <p>Event Details: {newevent.content} </p>
-                        <p>Hosted By: {newevent.author} </p>
                         <p>Date: {newevent.date} </p>
                     </div>
                 </div>
