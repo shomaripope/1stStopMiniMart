@@ -8,14 +8,13 @@ import SignedOutLinks from './SignedOutLinks';
 
 const NavBar = (props) => {
     const { auth } = props;
-    const links = auth.uid ? <SignedInLinks /> : <SignedOutLinks />
+    const links = auth.uid ? <SignedInLinks />  : <SignedOutLinks />
     return (
-        <nav className="nav">
-                {/* <Link to='/'><li><img src={Logo} alt="logo" /></li> </Link> */}
-                <div>
-                 { links }
-            </div>
-        </nav>
+    
+             <nav className="nav">{links}</nav>
+                 
+            
+       
     )
 }
 

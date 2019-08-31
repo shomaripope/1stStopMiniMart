@@ -23,7 +23,7 @@ class CreateEvent extends Component {
         const newEventReference = firebase.database().ref('events').push()
         newEventReference.set(this.state)
         //this.setState(firebase.database().ref('events').set(this.state))
-       let date = new Date().toISOString()
+    //    let date = new Date().toISOString()
        e.target.reset();
     }
     updateEvent = (eventId) =>{

@@ -7,8 +7,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: darkred;
-  color: white;
+  background: white;
+  color: black;
   text-align: center;
   
 }
@@ -30,7 +30,7 @@ code {
 
 .nav {
   display: inline-block;
-  background-color: darkred;
+  background-color: white;
   margin: auto;
   height: auto;
 }
@@ -43,7 +43,7 @@ code {
 #storethumbcard {
   height: 250px;
   margin-bottom: 80px;
-  background: url(../src/images/1stStopStorePic1.png) no-repeat;
+  background: url(../src/images/1stStopStoreStaffPic2.png) no-repeat;
   background-size: 100%;
   background-position: center;
   text-align: left;
@@ -109,7 +109,6 @@ code {
   background-position: center;
   text-align: center;
   color: white;
-
 }
 
 #intro {

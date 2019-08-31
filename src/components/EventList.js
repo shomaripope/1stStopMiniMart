@@ -1,6 +1,6 @@
 import React from 'react';
 import EventDetails from './EventDetails';
-import{ Link } from 'react-router-dom';
+// import{ Link } from 'react-router-dom';
 
 const EventList = ({events}) => {
 
