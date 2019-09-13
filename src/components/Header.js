@@ -11,9 +11,9 @@ class Header extends Component {
                 <div><NavBar /></div>
                 
                 <div className="container">
-                <h4>Welcome To 1st Stop Mini-Mart</h4>
-                <h5>Mini Mart/Cafe/Lounge/Event Center</h5>
-                <h5>Located at 444 Hightland Ave NE, Atlanta Ga 30312</h5>
+                <h5>Welcome To 1st Stop Mini-Mart</h5>
+                <h6>Mini Mart/Cafe/Lounge/Event Center</h6>
+                <h6>Located at 444 Hightland Ave NE, Atlanta Ga 30312</h6>
                 </div>
            </div>
         );
