@@ -12,7 +12,7 @@ class CafeMenu extends Component {
                     breakfast, lunch, dinner, and comfort foods in Atlanta!
                 </h4>
                 
-                <NavLink to='/weeklyspecias' className="btn waves-effect waves-light blue lighten-1"> Weekly Specials </NavLink>
+                <NavLink to='/weeklyspecials' className="btn waves-effect waves-light blue lighten-1"> Weekly Specials </NavLink>
 
                     <div>
                         <h1 className="title center">CAFE MENU</h1>

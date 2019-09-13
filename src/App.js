@@ -59,7 +59,7 @@ class App extends Component {
             <Route path='/eventagreement' component={EventAgreement} />
             <Route path='/pastevents' component={PastEvents} /> 
             <Route path='/weeklyevents' component={WeeklyEvents} />
-            <Route path='/weeklySpecials' component={WeeklySpecials} />
+            <Route path='/weeklyspecials' component={WeeklySpecials} />
             <Route path='/signup' component={SignUpForm} /> 
             <Route path='/signin' component={SignInForm} />
           </Switch>
