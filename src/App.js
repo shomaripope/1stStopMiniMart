@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import SignUpForm from './components/SignUpForm';
 import Home from './components/Home';
 import Events from './components/Events';
-
+import 'materialize-css/dist/css/materialize.min.css';
 import Admin from './components/Admin';
 import Store from './components/Store';
 import StoreItem from './components/StoreItem';
@@ -19,24 +19,16 @@ import Header from './components/Header';
 import WeeklyEvents from './components/WeeklyEvents';
 import WeeklySpecials from './components/WeeklySpecials';
 import PastEvents from './components/PastEvents';
+import M from "materialize-css";
 // import firebase from 'firebase'
+
 class App extends Component {
+// Import Materialize
 
-// componentDidMount(){
-//   var firebaseConfig = {
-//     apiKey: "AIzaSyDWE34UqYOVo-9uv9GfRn5nt88aaphU55o",
-//     authDomain: "ststopminimart.firebaseapp.com",
-//     databaseURL: "https://ststopminimart.firebaseio.com",
-//     projectId: "ststopminimart",
-//     storageBucket: "ststopminimart.appspot.com",
-//     messagingSenderId: "351650746373",
-//     appId: "1:351650746373:web:7baac8c4694717eb"
-//   };
-//   // Initialize Firebase
-//   firebase.initializeApp(firebaseConfig);
-// }
-
-
+    componentDidMount() {
+        // Auto initialize all the things!
+        M.AutoInit();
+    }
 
   render() {
     return (

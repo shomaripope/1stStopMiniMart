@@ -4,35 +4,44 @@ import Logo from '../images/facebook2.png';
 import Logo2 from '../images/instagram.png';
 import Logo3 from '../images/twitter.png';
 
-const SignedInLinks = () => {
+const SignedOutLinks = () => {
     return (
         <div>   
-            <nav className="nav-extended">
-                    <div>
-                        <ul id="nav-mobile">
-                            <li><NavLink to='/' className="btn waves-effect waves-light blue lighten-1"> Home </NavLink></li>    
-                            {/* <li><NavLink to='/signin' className="btn waves-effect waves-light blue lighten-1">Admin Login </NavLink></li> */}
-                            <li><NavLink to='/signup' className="btn waves-effect waves-light blue lighten-1"> Mailing List </NavLink></li>
-                            <li><NavLink to='/events' className="btn waves-effect waves-light blue lighten-1"> Events </NavLink></li>
-                            <li><NavLink to='/requestevent' className="btn waves-effect waves-light blue lighten-1"> Book An Event </NavLink></li>
-                        </ul>
-                    </div>
-            
-                <ul>
-                    <li className="right">
-                    <a href="https://www.facebook.com/1ststopminimart/" ><img src={Logo} alt="logo" id="socialIcon" /></a>
-                    </li>
-                    <li className="right">
-                    <a href="https://www.instagram.com/1st_stopminimart/" ><img src={Logo2} alt="logo" id="socialIcon" /></a>
-                    </li>
-                    <li className="right">
-                    <a href="https://twitter.com/1stStopMM/" ><img src={Logo3} alt="logo" id="socialIcon" /></a>
-                    </li>
-                </ul>
-            </nav>
+            <nav id="navbar">
+    <div className="nav-wrapper">
+        <a href="/home" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+            <ul className="right hide-on-med-and-down">
+                <li><NavLink to='/' > Home </NavLink></li>    
+                <li><NavLink to='/signup' > Mailing List </NavLink></li>
+                <li><NavLink to='/events' > Events </NavLink></li>
+                <li><NavLink to='/requestevent' > Book An Event </NavLink></li>
+            </ul>
+    </div>
+  </nav>
+
+<ul className="sidenav" id="mobile-demo">
+K<ul>
+    <li><NavLink to='/' > Home </NavLink></li>    
+    <li><NavLink to='/signup' > Mailing List </NavLink></li>
+    <li><NavLink to='/events' > Events </NavLink></li>
+    <li><NavLink to='/requestevent' > Book An Event </NavLink></li>
+</ul>
+    <br/>
+    <ul>
+    <li className="center">
+    <a href="https://www.facebook.com/1ststopminimart/" ><img src={Logo} alt="logo" id="socialIcon" /></a>
+    </li><br/>
+    <li className="center">
+    <a href="https://www.instagram.com/1st_stopminimart/" ><img src={Logo2} alt="logo" id="socialIcon" /></a>
+    </li><br/>
+    <li className="center">
+    <a href="https://twitter.com/1stStopMM/" ><img src={Logo3} alt="logo" id="socialIcon" /></a>
+    </li><br/>
+    </ul>
+</ul>
         </div>
     )
 }
 
 
-export default SignedInLinks;
+export default SignedOutLinks;
