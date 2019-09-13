@@ -40,16 +40,18 @@ componentDidMount(){
     render() {
         console.log(this.props)
         const  events = this.state.events
-
         return (
-            <div>
+            <div >
                 <div className="container">
                     <h4>Check out our upcoming events!</h4>
                     <h4>Fill out our form to request an event to book! </h4>
                     <NavLink to='/requestevent' className="btn waves-effect waves-light blue lighten-1"> Book An Event </NavLink>
                 </div>
-                 
+                <br />
+                <NavLink to='/pastevents' className="btn waves-effect waves-light blue lighten-1"> Past Event Pics </NavLink>
+                <br />
                 <div>
+                <br />
                 <EventList events={events} />
                 </div>
             </div>    

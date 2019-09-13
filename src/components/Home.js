@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="col s12 m7">
                 <div className="container" id="intro"></div>
                 <h3>First Stop Mini Mart is a brand new convenience store and coffee shop, located in the heart of the city. Our locations key feature is a charming coffee shop featuring free-wifi, television, food & drink, special events and more!
                 </h3>

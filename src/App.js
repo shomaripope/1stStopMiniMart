@@ -16,6 +16,9 @@ import EventRequest from './components/EventRequest';
 import EventAgreement from './components/EventAgreement';
 import SignInForm from './components/SignInForm';
 import Header from './components/Header';
+import WeeklyEvents from './components/WeeklyEvents';
+import WeeklySpecials from './components/WeeklySpecials';
+import PastEvents from './components/PastEvents';
 // import firebase from 'firebase'
 class App extends Component {
 
@@ -38,7 +41,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
+        <div className="App" >
         <Header />
         <div className="container">
         </div>
@@ -54,6 +57,9 @@ class App extends Component {
             <Route path='/createevent' component={CreateEvent} />
             <Route path='/requestevent' component={EventRequest} />
             <Route path='/eventagreement' component={EventAgreement} />
+            <Route path='/pastevents' component={PastEvents} /> 
+            <Route path='/weeklyevents' component={WeeklyEvents} />
+            <Route path='/weeklySpecials' component={WeeklySpecials} />
             <Route path='/signup' component={SignUpForm} /> 
             <Route path='/signin' component={SignInForm} />
           </Switch>

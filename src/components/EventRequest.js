@@ -32,7 +32,7 @@ class RequestEvent extends Component {
            
            <Link to='/eventagreement' className="btn waves-effect waves-light blue lighten-1">Rental Agreement</Link> 
 
-                <form onSubmit={this.handleSubmit} className="white">
+                <form action="mailto:shomaripope@gmail.com" encType="text/plain" onSubmit={this.handleSubmit} className="white">
                     <h5 className="grey-text text-darken-3">Book Event Request</h5>
                     <div className="input-field">
                             <label htmlFor="title">Event Title:</label>

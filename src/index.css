@@ -111,6 +111,17 @@ code {
   color: white;
 }
 
+#loungepic2 {
+  height: 400px;
+  width: 400px;
+  margin-bottom: 80px;
+  background: url(../src/images/LoungeServicesPic.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
 #intro {
  
   height: auto;
@@ -121,6 +132,15 @@ code {
 #footer {
   color: darkred;
   background-color: white;
+  width: auto;
+}
+
+#footer2 {
+  color: darkred;
+  background-image: url("../src/images/444image.jpg");
+  background-size: cover;
+  background-position-y: 690px;
+  opacity: .5;
   width: auto;
 }
 
@@ -141,3 +161,32 @@ code {
 .eventContent {
   margin-top: 40px;
 }
+
+#foodGallery {
+  margin-left: 30px;
+  
+  margin-left: center;
+  height: 350px;
+  width: 350px;
+  background-image: url("../src/images/CafeFoodPic3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#foodGallery2 {
+  margin-left: 30px;
+  height: 350px;
+  width: 350px;
+  background-image: url("../src/images/CafeFoodPic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#foodGallery3 {
+  margin-left: 30px;
+  margin-right: auto;
+  height: 350px;
+  width: 350px;
+  background-image: url("../src/images/CafeCoffeePic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+

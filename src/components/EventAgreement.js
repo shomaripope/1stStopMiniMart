@@ -6,11 +6,12 @@ class EventAgreement extends Component {
             <div className="container">
             <h5>Rental Terms and Conditions</h5>
                 <p>
-                444 Hightland Ave NE, Atlanta Ga 30312<br/>
+                1st Stop Event Space <br/>
+                444 Hightland Ave NE, Atlanta Ga 30312 <br/>
 
-RENTAL TERMS, CONDITIONS, AND RENTAL ORDER IMPORTANT – READ AND SIGN THE FOLLOWING RENTAL TERMS, CONDITIONS, AND THE RENTAL ORDER FORM 1ST STOP EVENT SPACE'S RENTAL AGREEMENT & AND ARE BINDING UPON CUSTOMER ORDER:<br/>
+RENTAL TERMS, CONDITIONS, AND RENTAL ORDER IMPORTANT – READ AND SIGN THE FOLLOWING RENTAL TERMS, CONDITIONS, AND THE RENTAL ORDER FORM 1ST STOP EVENT SPACE'S RENTAL AGREEMENT & AND ARE BINDING UPON CUSTOMER ORDER: <br/>
 
-I. Rental Terms and Conditions<br/>
+I. Rental Terms and Conditions <br/>
 
 1. Customer shall use all property in a careful and proper manner, shall comply with all applicable laws and regulations, and shall return the property in the same condition and good repair as when received. Customer hereby assumes all risk of loss and damage to the property from any cause whatsoever. <br/>
 
