@@ -7,10 +7,10 @@ class CafeMenu extends Component {
     render() {
         return (
             <div className="col s12 m7">
-                <h4>
+                <h5>
                     Come try our expanding menu with some of the best
                     breakfast, lunch, dinner, and comfort foods in Atlanta!
-                </h4>
+                </h5>
                 
                 <NavLink to='/weeklyspecials' className="btn waves-effect waves-light blue lighten-1"> Weekly Specials </NavLink>
 
