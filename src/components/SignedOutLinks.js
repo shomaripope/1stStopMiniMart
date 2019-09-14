@@ -9,7 +9,7 @@ const SignedOutLinks = () => {
         <div>   
             <nav id="navbar">
     <div className="nav-wrapper">
-        <a href="/home" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+        <a href="/home" data-target="mobile-demo" className="sidenav-trigger"><b className="material-icons"> ||| </b></a>
             <ul className="right hide-on-med-and-down">
                 <li><NavLink to='/' > Home </NavLink></li>    
                 <li><NavLink to='/signup' > Mailing List </NavLink></li>
@@ -20,7 +20,7 @@ const SignedOutLinks = () => {
   </nav>
 
 <ul className="sidenav" id="mobile-demo">
-K<ul>
+<ul>
     <li><NavLink to='/' > Home </NavLink></li>    
     <li><NavLink to='/signup' > Mailing List </NavLink></li>
     <li><NavLink to='/events' > Events </NavLink></li>
