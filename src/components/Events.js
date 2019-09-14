@@ -44,7 +44,7 @@ componentDidMount(){
             <div >
                 <div className="container">
                     <h4>Check out our upcoming events!</h4>
-                    <h4>Fill out our form to request an event to book! </h4>
+                    <h5>Fill out our form to request an event to book! </h5>
                     <NavLink to='/requestevent' className="btn waves-effect waves-light blue lighten-1"> Book An Event </NavLink>
                 </div>
                 <br />

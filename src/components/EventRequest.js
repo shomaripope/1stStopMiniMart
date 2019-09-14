@@ -26,9 +26,9 @@ class RequestEvent extends Component {
     render() {
         return (
             <div className="container">
-            <h4>
-                From small, intimate, gatherings to large private/public events, we have the space for you! Give us a call for more info @ 678.515.8928!
-            </h4>
+            <h5>
+                From small, intimate, gatherings to large private/public events, we have the space for you! <br /> Give us a call for more info @ 678.515.8928
+            </h5>
            
            <Link to='/eventagreement' className="btn waves-effect waves-light blue lighten-1">Rental Agreement</Link> 
 
