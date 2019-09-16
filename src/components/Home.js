@@ -6,7 +6,7 @@ class Home extends Component {
     render() {
         return (
             <div className="col s12 m7">
-                <div className="container" id="intro"></div>
+                <div className="container"></div>
                 <h5>First Stop Mini Mart is a brand new convenience store and coffee shop, located in the heart of the city. We offer a charming coffee shop with free-wifi, television, special events and more!
                 </h5>
                 <h5>Call us @: 678.515.8928</h5>

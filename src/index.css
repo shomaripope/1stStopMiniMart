@@ -124,6 +124,7 @@ code {
 #intro {
   height: auto;
   text-align: center;
+  color: darkred;
 }
 
 #footer {
