@@ -15,7 +15,7 @@ class LoungeList extends Component {
                     <h2 className="header">Outdoor Seating</h2>
                     <div className="card horizontal">
                         <div className="card-image">
-                        <img src={LoungePic3} alt="outdoor seating" />
+                        <img className="responsive-img" src={LoungePic3} alt="outdoor seating" />
                         </div>
                     </div>
                 </div>
@@ -24,7 +24,7 @@ class LoungeList extends Component {
                     <h2 className="header">Evening Activities</h2>
                     <div className="card horizontal">
                         <div className="card-image">
-                        <img src={LoungePic2} alt="evening activities" />
+                        <img className="responsive-img" src={LoungePic2} alt="evening activities" />
                         </div>
                     </div>
                 </div>

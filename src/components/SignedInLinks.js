@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { signOut } from '../store/actions/authActions';
 
@@ -7,10 +7,10 @@ import { signOut } from '../store/actions/authActions';
 const SignedInLinks = (props) => {
     return (
                 <ul >
-                <li><NavLink to='/' className="btn waves-effect waves-light blue lighten-1" > Home </NavLink></li>   
+                <li><a href='/' className="btn waves-effect waves-light blue lighten-1" > Home </a></li>   
                 <li><a href='/' onClick={props.signOut} className="btn waves-effect waves-light blue lighten-1" > Logout </a></li>
-                <li><NavLink to='/events' className="btn waves-effect waves-light blue lighten-1"> Events </NavLink></li>
-                <li><NavLink to='/admin' className="btn waves-effect waves-light blue lighten-1"> Add Event </NavLink></li>
+                <li><a href='/events' className="btn waves-effect waves-light blue lighten-1"> Events </a></li>
+                <li><a href='/admin' className="btn waves-effect waves-light blue lighten-1"> Add Event </a></li>
                 </ul>
     )
 }

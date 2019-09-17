@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import Logo from '../images/facebook2.png';
 import Logo2 from '../images/instagram.png';
 import Logo3 from '../images/twitter.png';
@@ -11,20 +11,20 @@ const SignedOutLinks = () => {
     <div className="nav-wrapper">
         <a href="/home" data-target="mobile-demo" className="sidenav-trigger"><b className="material-icons"> ||| </b></a>
             <ul className="right hide-on-med-and-down">
-                <li><NavLink to='/' > Home </NavLink></li>    
-                <li><NavLink to='/signup' > Mailing List </NavLink></li>
-                <li><NavLink to='/events' > Events </NavLink></li>
-                <li><NavLink to='/requestevent' > Book An Event </NavLink></li>
+                <li><a href='/' > Home </a></li>    
+                <li><a href='/signup' > Mailing List </a></li>
+                <li><a href='/events' > Events </a></li>
+                <li><a href='/requestevent' > Book An Event </a></li>
             </ul>
     </div>
   </nav>
 
 <ul className="sidenav" id="mobile-demo">
 <ul>
-    <li><NavLink to='/' > Home </NavLink></li>    
-    <li><NavLink to='/signup' > Mailing List </NavLink></li>
-    <li><NavLink to='/events' > Events </NavLink></li>
-    <li><NavLink to='/requestevent' > Book An Event </NavLink></li>
+    <li><a href='/' > Home </a></li>    
+    <li><a href='/signup' > Mailing List </a></li>
+    <li><a href='/events' > Events </a></li>
+    <li><a href='/requestevent' > Book An Event </a></li>
 </ul>
     <br/>
     <ul>
