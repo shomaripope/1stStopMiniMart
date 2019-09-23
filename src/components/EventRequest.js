@@ -47,7 +47,7 @@ class RequestEvent extends Component {
                             <input type="text" id="number" onChange={this.handleChange} required />
                         </div>
                         <div className="input-field">
-                            <label htmlFor="email">Host Phone email:</label>
+                            <label htmlFor="email">Host email:</label>
                             <input type="email" id="email" onChange={this.handleChange} required />
                         </div>
                         <div className="input-field">

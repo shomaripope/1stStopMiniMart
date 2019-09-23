@@ -16,7 +16,14 @@ class StoreItem extends Component {
                             </div>
                         <div className="card-stacked">
                             <div className="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                <ul>
+                                    <li>Water</li>
+                                    <li>Juice</li>
+                                    <li>Soda</li>
+                                    <li>Tea</li>
+                                    <li>Sports Drinks</li>
+                                    <li>And More...!</li>
+                                </ul>
                             </div>
                         </div>
                         </div>
@@ -30,7 +37,16 @@ class StoreItem extends Component {
                             </div>
                         <div className="card-stacked">
                             <div className="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                <ul>
+                                    <li>Chips</li>
+                                    <li>Crackers</li>
+                                    <li>Pastries</li>
+                                    <li>Protein Bars</li>
+                                    <li>Cup Noodles</li>
+                                    <li>Cereal Cups</li>
+                                    <li>Cookies</li>
+                                    <li>And More...!</li>
+                                </ul>
                             </div>
                         </div>
                         </div>
@@ -44,7 +60,16 @@ class StoreItem extends Component {
                             </div>
                         <div className="card-stacked">
                             <div className="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                <ul>
+                                    <li>Sweets</li>
+                                    <li>Chocolates</li>
+                                    <li>Gummies</li>
+                                    <li>Candy Bars</li>
+                                    <li>Suckers</li>
+                                    <li>Cold/Flu Medicine</li>
+                                    <li>Air Fresheners</li>
+                                    <li>And More...!</li>
+                                </ul>
                             </div>
                         </div>
                         </div>
@@ -58,7 +83,16 @@ class StoreItem extends Component {
                             </div>
                         <div className="card-stacked">
                             <div className="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                <ul>
+                                    <li>Pain/Allergy Meds</li>
+                                    <li>Condoms</li>
+                                    <li>Toiletries</li>
+                                    <li>Deoderant/Body Spray</li>
+                                    <li>Bleach/Detergent</li>
+                                    <li>Cold/Flu Medicine</li>
+                                    <li>Air Fresheners</li>
+                                    <li>And More...!</li>
+                                </ul>
                             </div>
                         </div>
                         </div>

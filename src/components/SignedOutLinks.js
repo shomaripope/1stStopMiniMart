@@ -1,5 +1,5 @@
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Logo from '../images/facebook2.png';
 import Logo2 from '../images/instagram.png';
 import Logo3 from '../images/twitter.png';
