@@ -15,20 +15,20 @@ class SignedOutLinks extends Component {
     render() {
         return (
         <div>   
-            <nav>
-    <div class="nav-wrapper">
-      <a href="/" class="brand-logo"> </a>
-      <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
+            
+    <div className="nav-wrapper">
+      <a href="/" className="brand-logo"> </a>
+      <a href="/" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+      <ul className="right hide-on-med-and-down">
         <li><a href='/' > Home </a></li>    
         <li><a href='/signup' > Mailing List </a></li>
         <li><a href='/events' > Events </a></li>
         <li><a href='/requestevent' > Book An Event </a></li>
       </ul>
     </div>
-  </nav>
+  
 
-  <ul class="sidenav" id="mobile-demo">
+  <ul className="sidenav" id="mobile-demo">
     <li><a href='/' > Home </a></li>    
     <li><a href='/signup' > Mailing List </a></li>
     <li><a href='/events' > Events </a></li>
