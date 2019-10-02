@@ -20,6 +20,7 @@ import WeeklyEvents from './components/WeeklyEvents';
 import WeeklySpecials from './components/WeeklySpecials';
 import PastEvents from './components/PastEvents';
 import M from "materialize-css";
+
 // import firebase from 'firebase'
 
 class App extends Component {

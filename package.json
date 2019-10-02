@@ -8,6 +8,7 @@
     "@angular/material": "^8.1.4",
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "axios": "^0.19.0",
     "browser-router": "^0.2.0",
     "firebase": "^6.4.0",
     "material-components-web": "^3.1.1",

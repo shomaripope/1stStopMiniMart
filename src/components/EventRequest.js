@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { requestEvent } from '../store/actions/requestActions';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
+const API_PATH = 'https://ststopminimart.firebaseio.com';
+
 
 class RequestEvent extends Component {
     state = {
@@ -11,6 +15,8 @@ class RequestEvent extends Component {
         email: '',
         content: '',
         date: '',
+        mailSent: false,
+        error: null
     }
     handleChange = (e) => {
         this.setState({
@@ -22,6 +28,19 @@ class RequestEvent extends Component {
         // console.log(this.state);
         this.props.requestEvent(this.state)
         e.target.reset();
+
+        axios({
+            method: 'post',
+            url: `${API_PATH}`,
+            headers: { 'content-type': 'application/json' },
+            data: this.state
+          })
+            .then(result => {
+              this.setState({
+                mailSent: result.data.sent
+              })
+            })
+            .catch(error => this.setState({ error: error.message }));
     }
     render() {
         return (
@@ -60,6 +79,11 @@ class RequestEvent extends Component {
                         </div>
                         <div className="input-field">
                             <button className="btn waves-effect waves-light blue lighten-1 z-depth-0">Request Event</button>
+                        </div>
+                        <div>
+                            {this.state.mailSent &&
+                                <div>Thank you for contcting us.</div>
+                            }
                         </div>
                 </form>
                 
